@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+/*Quitamos los bordes al documento principal*/
+* body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------------------------------------------------------------*/
+/*Colocamos estilo a la barra de navegación*/
+.navegacion{
+    display: flex;
+    height: 70px;
+    width: 95.4%;
+    align-items: center;
+    background: #A3A656;
+    padding-left: 70px;
+}
+
+/*Estilo a la lista de navegación*/
+nav ul{
+    list-style: none; /*Quitamos los puntos*/
+    display: flex;
+    text-decoration: none;
+    gap: 2rem; /*Separacion entre cada elemento de la lista*/
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /*Regular*/
+    text-transform: uppercase; 
+    padding-right: 580px;
+}
+
+.textoPostImg{
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.textoPostText{
+    padding-right: 10px;
+}
+
+/*Cada vez que el mouse pase por encima de algun texto del banner, cambia de color*/
+.navegacion li:hover,
+.textoPostImg:hover,
+.textoPostText:hover {
+  color: #FFFF00;            
+}
+
+/*--------------------------------------------------------------*/
+/*Estilos para el Main*/
+
+.textoImgs{
+  position: absolute;            /* Para que se coloque encima */
+  font-size: 96px;
+  font-family: 'Romanesco';
+  font-weight: 400;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%); 
+  color: black;
+}
+
+.imgMain img{
+    position: relative;/* Contenedor relativo */
+    object-fit: cover;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: block; /*Elimina el espacio que se genera despues de la imagen*/
+}
+
+.textoEslogan{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 32px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600; /*Semibold*/
+}
+
+/*------------------------------------------------------------------*/
+/*Estilo para la barra de entrada*/
+
+.barraEntrada {
+  height: 100px;
+  display: flex;                /* Activa Flexbox */
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  background: #F2F6F6;
+}
+
+.barraEntrada form{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.campo{
+    margin-right: 50px;
+}
+
+
+.barraEntrada input{
+    background: white;
+    border: 2px solid white;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 15px;
+    padding: 12px 16px;             /* Agranda el input desde dentro */
+    font-family: 'Inter',sans-serif;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Estilos para las tarjetas */
+  
+.ContenedorPrincipal{
+    overflow: hidden; /*Cuando hay dos bloques, sus margenes pueden colapsar, para evitarlo*/
+    background-color: white;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 134px;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.card{
+    text-align: center;
+    width: 350px;
+    padding-bottom: 50px;
+}
+
+.titleCard{
+    background: #A3A656;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    height: 70px;
+}
+
+.titleCard h1{
+    font-family: 'Inter',sans-serif;
+    font-weight: 600; /*Semibold*/
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.descripcionCard p{
+    text-align: left;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.componente{
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+
+.componente .precio{
+    color: black;
+    font-size: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.mi-boton button{
+    background: #A3A656;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 35px; 
+    cursor: pointer;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.mi-boton button:hover{
+    background: #384001;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Estilos para los beneficios */
+
+.divBeneficios{
+    background: #F2F6F6;
+    height: 770px;
+    padding-top: 15px;
+}
+
+.titleBeneficios h1{
+    text-align: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.listaBeneficios{
+    display: flex;
+    gap: 210px;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+.imgBeneficios{
+    width: 233px;
+    height: 233px;
+    border: 10px solid #384001;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+.descripcionBeneficio h1{
+    margin: 0;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 30px;
+}
+
+.tbnBeneficios button{
+    background: #A3A656;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 53px; 
+    cursor: pointer;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.tbnBeneficios button:hover{
+    background: #384001;
+}
+
+.liDescripcion{
+    margin: 0;
+    padding-top: 10px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Estilos para el pie de pagina */
+
+.pieDePagina{
+    display: flex;
+    background: #384001;
+    height: 97px;
+    align-items: center;
+    color: #A3A656;
+}
+
+.pieDePagina nav ul{
+    list-style: none;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;   
+    font-size: 16px;
+    gap: 20%;
+    padding-left: 70px;
+    padding-right: 500px;
+    white-space: nowrap; /*Para que el texto no salte una linea*/
+}
+
+.complementoDelNav{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;   
+    font-size: 16px;
+    padding-right: 50px;
+    white-space: nowrap; /*Para que el texto no salte una linea*/
+}
+
+.imgFooter{
+    padding-right: 23px;
+}
+
+.pieDePagina nav li:hover,
+.complementoDelNav:hover{
+  color: #FFFF00;            
+}
+/*
+.card, .ContenedorPrincipal, .titleCard {
+    outline: 1px solid red;
+}
+*/
+
+/*
+.co{
+    display: flex;
+}
+
+.mi-boton{
+    background-color: black;
+}
+
+.co .mi-boton{
+    background-color: #A3A656;
+}
+    */
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Romanesco&display=swap"
+        rel="stylesheet">
+    <!--Autor: Ricardo Villarreal-->
+</head>
+
+<body>
+
+    <!--Barra de navegación-->
+    <header class="navegacion">
+        <nav>
+            <ul>
+                <li>PROMOCIONES</li>
+                <li>FOTOS</li>
+                <li>SERVICIOS</li>
+                <li>MAPA</li>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+
+        <!--Imagen User-->
+        <div>
+            <img src="images/user.png" alt="imagenUsuario">
+        </div>
+
+        <div class="textoPostImg">
+            Mi cuenta
+        </div>
+
+        <div class="textoPostText">
+            ES
+        </div>
+
+        <!--Imagen flag -->
+        <div class="textoPostText">
+            <img src="images/flag.png" alt="imagenBandera">
+        </div>
+
+        <!--Imagen arrow-->
+        <div>
+            <img src="images/arrow.png" alt="imagenFlecha">
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <div class="imgMain">
+            <img src="images/main.png" alt="imagenPrincipal">
+            <div class="textoImgs">SPA - Jodos</div>
+            <div class="textoEslogan">Regálate un momento de paz y <br>consiente a tu piel en el mejor lugar</div>
+        </div>
+    </main>
+
+
+    <!--Barra de input-->
+    <div class="barraEntrada">
+        <form>
+            <div class="campo">
+                <label for="reserva">RESERVA TU CITA : </label>
+                <input type="text" id="reserva" required>
+            </div>
+
+            <div>
+                <label for="cod">CÓDIGO PROMOCIONAL : </label>
+                <input type="text" name="" id="cod" placeholder="CODIGO">
+            </div>
+
+        </form>
+    </div>
+
+    <!--Catalogo-->
+    <div class="ContenedorPrincipal">
+
+        <!------------------------------------------------------------------------->
+        <div class="card">
+            <div class="titleCard">
+                <h1>Masaje de Pies</h1>
+            </div>
+
+            <div class="imgCard">
+                <img src="images/pies.png" alt="imagenPies">
+            </div>
+
+            <div class="descripcionCard">
+                <p>Esta es una descripción de la opción <br>en cuestión....</p>
+            </div>
+
+            <div class="componente">
+                <div class="precio">$65</div>
+                <div class="mi-boton">
+                    <button>RESERVAR</button>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------->
+
+        <!------------------------------------------------------------------------->
+        <div class="card">
+            <div class="titleCard">
+                <h1>Masaje relajante</h1>
+            </div>
+
+            <div>
+                <img src="images/relajante.png" alt="imagenMasajeFacial">
+            </div>
+
+            <div class="descripcionCard">
+                <p>Esta es una descripción de la opción <br>en cuestión....</p>
+            </div>
+
+            <div class="componente">
+                <div class="precio">$60</div>
+                <div class="mi-boton">
+                    <button>RESERVAR</button>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------->
+
+        <!------------------------------------------------------------------------->
+        <div class="card">
+            <div class="titleCard">
+                <h1>Masaje con bambú</h1>
+            </div>
+
+            <div>
+                <img src="images/bambu.png" alt="imagenEspalda">
+            </div>
+
+            <div class="descripcionCard">
+                <p>Esta es una descripción de la opción <br>en cuestión....</p>
+            </div>
+
+            <div class="componente">
+                <div class="precio">$58</div>
+                <div class="mi-boton">
+                    <button>RESERVAR</button>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------->
+
+    </div>
+
+    <!--Promociones-->
+
+    <div class="divBeneficios">
+        <div class="titleBeneficios">
+            <h1>Haste socio y prueba nuestros beneficios</h1>
+        </div>
+
+        <div class="listaBeneficios">
+
+            <div class="cardSocios">
+                <div class="imgBeneficios">
+                    <img src="images/gold.png" alt="LogoPremiun">
+                </div>
+
+                <div class="descripcionBeneficio">
+                    <h1>GOLD</h1>
+                </div>
+
+                <div class="tbnBeneficios">
+                    <button>VER CONDICIONES</button>
+                </div>
+
+                <div class="liDescripcion">
+                    <ul>
+                        <li>Gimnasio</li>
+                        <li>Piscina</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cardSocios">
+                <div class="imgBeneficios">
+                    <img src="images/premium.png" alt="LogoPremiun">
+                </div>
+
+                <div class="descripcionBeneficio">
+                    <h1>PREMIUM</h1>
+                </div>
+
+                <div class="tbnBeneficios">
+                    <button>VER CONDICIONES</button>
+                </div>
+
+                <div class="liDescripcion">
+                    <ul>
+                        <li>Gimnasio</li>
+                        <br>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cardSocios">
+                <div class="imgBeneficios">
+                    <img src="images/plate.png" alt="LogoPremiun">
+                </div>
+
+                <div class="descripcionBeneficio">
+                    <h1>PLATE</h1>
+                </div>
+
+                <div class="tbnBeneficios">
+                    <button>VER CONDICIONES</button>
+                </div>
+
+                <div class="liDescripcion">
+                    <ul>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="pieDePagina">
+
+        <nav>
+            <ul>
+                <li>POLITICAS DE COOKIES</li>
+                <li>AVISO LEGAL</li>
+                <li>PROTECCIÓN DE DATOS</li>
+                <li>MAPA DEL SITIO</li>
+            </ul>
+        </nav>
+
+        <div class="complementoDelNav">SÍGUENOS EN</div>
+        <div class="imgFooter">
+            <img src="images/rs_facebook.png" alt="logoFacebook">
+        </div>
+
+        <div class="imgFooter">
+            <img src="images/rs_twiter.png" alt="logoTwiter">
+        </div>
+
+        <div class="imgFooter">
+            <img src="images/rs_youtube.png" alt="logoYoutube">
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
